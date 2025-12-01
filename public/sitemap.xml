@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Simple static sitemap for local/dev use. Replace all occurrences
+  of `https://YOUR_DOMAIN_HERE` with your real site URL before deploying.
+  Add or remove <url> entries as needed.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://samprakshiinfinitysolution.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2025-11-29</lastmod>
+  </url>
+  <url>
+    <loc>https://samprakshiinfinitysolution.com/contact-us</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-11-29</lastmod>
+  </url>
+  <url>
+    <loc>https://samprakshiinfinitysolution.com/e-commerce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-11-29</lastmod>
+  </url>
+  <url>
+    <loc>https://samprakshiinfinitysolution.com/development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2025-11-29</lastmod>
+  </url>
+  <url>
+    <loc>https://samprakshiinfinitysolution.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2025-11-29</lastmod>
+  </url>
+</urlset>

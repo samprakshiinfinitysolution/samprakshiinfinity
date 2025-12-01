@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.secondSection {
+    width: 100%;
+    padding: 40px 10px; /* Reduce padding for smaller screens */
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left Wrapper */
+.secondSection-left-wrapper {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secondSection-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.secondSection-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.secondSection-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05);
+}
+
+.secondSection-icon {
+    width: 80px; /* Reduce icon size */
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.secondSection-card-h3 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Right Wrapper */
+.secondSection-right-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.device {
+    max-height: 50vh;
+    max-width: 100%;
+}
+
+.image-container {
+    transition: 0.2s transform ease;
+}
+
+.secondSection-hover {
+    position: relative;
+    text-align: center;
+    transition: 1s transform ease;
+}
+
+.secondSection-screen {
+    position: absolute;
+    top: 17%;
+    left: 15%;
+    width: 70%;
+    height: 55%;
+    overflow: scroll;
+    object-fit: cover;
+    color: white;
+}
+.secondSection-screen::-webkit-scrollbar {
+    display: none;
+  }
+
+.secondSection-underline {
+    width: 120px;
+    height: 4px;
+    background-color: #0d92f4;
+    margin: 10px auto;
+}
+
+.laptop-h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.laptop-p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+@media (max-width: 1068px) {
+ 
+    .laptop-h5 {
+        font-size: 14px;
+    }
+
+    .laptop-p {
+        font-size: 11px;
+    }
+    .device {
+        max-height: 40vh;
+    }
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .secondSection-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSection-left-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .secondSection-cards {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
+    }
+
+    .secondSection-right-wrapper {
+        width: 100%;
+    }
+    .laptop-h5 {
+        font-size: 13px;
+    }
+
+    .laptop-p {
+        font-size: 11px;
+    }
+    .device {
+        max-height: 40vh;
+    }
+}
+@media (max-width: 480px) {
+    .secondSection-cards {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 icons per row */
+        gap: 10px;
+    }
+
+    .secondSection-card {
+        width: 100%; /* Ensure cards adjust within the grid */
+        padding: 10px;
+    }
+
+    .secondSection-icon {
+        width: 50px; /* Make icons smaller */
+        height: 50px;
+    }
+
+    .secondSection-card-h3 {
+        font-size: 12px; /* Reduce font size */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add a hover effect to the cards for better interactivity */
+
+.secondSection-card {
+    transition: all 0.3s ease;
+    cursor: pointer; /* Cursor changes to pointer for better UX */
+    border: 2px solid transparent; /* Border to help with the hover effect */
+    border-radius: 8px; /* Rounded corners for a soft look */
+}
+
+.secondSection-card:hover {
+    box-shadow: 0 0 10px rgba(6, 113, 208, 0.7); /* Smooth blue glow */
+    transform: scale(1.05); /* Slight scaling for more interactive feel */
+    border-color: rgba(6, 113, 208, 0.7); /* Light blue border on hover */
+}
+
+.secondSection-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.secondSection-card:hover .secondSection-icon {
+    transform: scale(1.1); /* Slight icon enlarge */
+    filter: brightness(1.1); /* Slightly brighten the icon */
+}

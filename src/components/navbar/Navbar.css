@@ -1,0 +1,136 @@
+/* .header {
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled {
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 24px;
+}
+
+.navbar-logo {
+    justify-self: start;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: #2563eb;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links:hover::after,
+.nav-links.active::after {
+    transform: scaleX(1);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown directly below the parent nav-item */
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Hide completely for accessibility */
+    transform: translateY(10px); /* Slight slide down effect */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f5ff;
+    color: #2563eb;
+}
+
+@media screen and (max-width: 960px) {
+    /* Mobile styles will go here */
+}
+  .navbar-container {
+    padding: 0 1rem;
+} */

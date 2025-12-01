@@ -1,0 +1,100 @@
+.thirdSection {
+    width: 100%;
+    background-color:  #f5f7fa; /* Light background for contrast */
+    padding: 60px 20px; /* Spacing for top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdSection-container {
+    max-width: 80%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+}
+
+.thirdSection-head h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333333; /* Dark text for readability */
+    margin-bottom: 10px;
+}
+
+.thirdSection-underline {
+    width: 80px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #0D92F4; /* Accent color */
+    border-radius: 2px;
+}
+
+.thirdSection-para {
+    margin-top: 20px;
+    /* padding: 0 10px; /* Padding for text inside */
+} 
+
+.thirdSection-para p {
+    font-size:1.1rem; /* Slightly larger text for readability */
+    line-height: 1.8;
+    text-align: justify;
+    color: #555555; /* Softer text color for less strain */
+}
+
+@media screen and (max-width: 768px) {
+
+    .thirdSection-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .thirdSection-head h1 {
+        font-size: 2rem;
+    }
+
+    .thirdSection-para p {
+        font-size: 1rem;
+    }
+}
+.thirdSection-container {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: all 1.5s ease-out;
+  }
+  
+  .thirdSection-container.animate-fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .thirdSection-head h1 {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px);
+    transition: all 1s ease-out 0.5s;
+  }
+  
+  .thirdSection-head h1.animate-slideUp {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .thirdSection-underline {
+    transform: scaleX(0); /* Initially scaled down */
+    transition: transform 0.8s ease-out 1s;
+  }
+  
+  .thirdSection-underline.animate-expand {
+    transform: scaleX(1);
+  }
+  
+  .thirdSection-para {
+    opacity: 0;
+    transition: opacity 1.2s ease-out 1s;
+  }
+  
+  .thirdSection-para.animate-fadeIn {
+    opacity: 1;
+  }
+  

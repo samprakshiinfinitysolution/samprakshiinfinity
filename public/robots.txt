@@ -1,0 +1,10 @@
+# robots.txt for this project
+# Replace YOUR_DOMAIN_HERE with your production domain (no trailing slash)
+
+User-agent: *
+Allow: /
+
+# Where your sitemap is located
+Sitemap: https://samprakshiinfinitysolution.com/sitemap.xml
+# Optional Host directive (some crawlers use this)
+Host: https://samprakshiinfinitysolution.com

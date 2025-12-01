@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="hero card 2">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0e2a5b"/>
+      <stop offset="100%" stop-color="#0e57b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="8" fill="url(#g2)" />
+  <g transform="translate(40,40)" fill="#fff" font-family="Arial, Helvetica, sans-serif">
+    <text x="0" y="30" font-size="22" font-weight="700">ANNOUNCEMENT</text>
+    <text x="0" y="60" font-size="14" opacity="0.8">PARTNERSHIP</text>
+    <rect x="0" y="110" width="260" height="160" rx="6" fill="#ffffff22" />
+    <text x="20" y="170" font-size="20" font-weight="700">TERRALOGIC</text>
+    <text x="320" y="190" font-size="20" font-weight="700">IBM</text>
+    <text x="20" y="300" font-size="12" opacity="0.9">Slide 2 — A different angle on our collaboration highlighting security and observability.</text>
+  </g>
+</svg>

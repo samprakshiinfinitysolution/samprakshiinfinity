@@ -1,0 +1,255 @@
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #efefef;
+    display: block;
+}
+
+.inner-footer {
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer-items {
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #2b7bf4;
+    
+}
+.footer-item-email {
+    font-weight: 600;
+    color: #6C757D;
+    display: flex;
+    align-items: center;
+}
+.footer-item-phone {
+    font-weight: bold;
+    color: #1D2124;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.footer-item-email > a > p {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.footer-item-phone > a> p {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.footer-logo {
+    width: 150px;
+   
+}
+.footer-items p {
+    font-size: 16px;
+    /* text-align: justify; */
+    line-height: 25px;
+    color: #1D2124;
+}
+.footer-items a{
+    color: #1D2124;
+}
+
+.footer-items h1 {
+    color:#2b7bf4 ;
+}
+
+
+.border1 {
+    height: 3px;
+    width: 40px;
+    background: #ff9800;
+    color: #ff9800;
+    background-color: #ff9800;
+    border: 0px;
+}
+.footer-item-desc {
+    /* width: 200px; */
+    color: #1D2124;
+  
+    /* text-align: center;  */
+    /* display: flex; */
+    /* flex-direction: column;  */
+    /* align-items: center;  */
+    /* justify-content: center; */
+}
+.footer-item-desc a{
+   
+}
+.address{
+   
+    font-weight: 600;
+    color: #6C757D;
+   
+}
+.phone{
+    margin-left: 10px;
+}
+.ph{
+    color: #1D2124;
+    font-weight: bold;
+
+}
+.footer-item-ul {
+    list-style: none;
+    color:#2B7BF4;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer-item-ul a {
+    /* text-decoration: none; */
+    outline: none;
+    font-size: larger;
+    font-weight: 600;
+    color: #6C757D;
+    transition: 0.3s;
+}
+
+
+.footer-item-ul a:hover {
+    color:#2B7BF4;
+}
+
+.footer-item-ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+
+.footer-item-ul i {
+    margin-right: 20px;
+}
+
+.footer-social-icons {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    display: flex;
+	align-items: center;
+    justify-content: space-around;
+}
+
+.footer-social-container {
+    display: flex;
+    /* width: 20%; */
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.footer-social-icon-div {
+    background-color: #fff;
+
+    padding: 12px 12px;
+    border-radius: 10px;
+
+    transition: background 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+.footer-social-icon-div a {
+    font-size: 1.2rem;
+    color: #2c76e1;
+    transition: color 0.3s ease-in-out;
+}
+.footer-social-icon-div:hover {
+    transform: scale(1.2);
+}
+.face:hover {
+    color: #0866FF;
+}
+.footer-social-icon-div:hover {
+    background: white;
+}
+.linkedin:hover {
+    color: #0A66C2;
+}
+.yt:hover {
+    color: #ff0000;
+}
+
+.x:hover {
+    color:black;
+}
+.footer-social-icon-div:hover {
+    background: white;
+}
+
+.ins:hover {
+    color: #e4405f;
+}
+
+.footer-bottom {
+    padding: 10px;
+    background: #EFEFEF;
+    color: #1D2124;
+    font-size: 12px;
+    text-align: center;
+}
+.mt-2 a{
+    color: #6C757D;
+}
+/* for tablet mode view */
+
+/* Responsive: Tablet View */
+@media screen and (max-width: 1024px) {
+    .footer-items {
+        width: 50%;
+        text-align: center;
+    }
+    .border1 {
+        display: none;
+    }
+}
+
+/* Responsive: Mobile View */
+@media screen and (max-width: 660px) {
+    .inner-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* .footer-item-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    } */
+
+    .footer-items {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .footer-item-email,
+    .footer-item-phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social-icons {
+      
+        display: flex;
+        
+        flex-direction: row;
+       
+		align-items: center;
+        gap: 10px;
+    }
+    
+}
+
+/* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
+
+/* Thanks to Computer Conversations */

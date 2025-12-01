@@ -1,0 +1,342 @@
+.fifthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between left and right sections */
+    width: 100%;
+    padding: 50px 20px;
+    background: rgb(236, 236, 236);
+}
+.fifthSection-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.fifthSection-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifthSection-left-img {
+    max-width: 700px;
+    height: 400px;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.fifthSection-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.fifthSection-texts {
+    text-align: left;
+    width: 100%;
+}
+
+.fifthSection-title {
+    font-size: 2rem;
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fifthSection-description {
+    font-size: 1.125rem; /* Slightly larger text for readability */
+    line-height: 1.6;
+    color: rgb(19, 19, 19);
+    text-align:justify;
+    margin-bottom: 20px;
+}
+
+.fifthSection-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0d92f4; /* Primary button color */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fifthSection-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+@media screen and (max-width: 1024px) {
+    .fifthSection-container {
+        gap: 30px;
+    }
+
+    .fifthSection-title {
+        font-size: 1.75rem;
+    }
+
+    .fifthSection-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fifthSection {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .fifthSection-container {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .fifthSection-right {
+        text-align: center;
+        padding: 0;
+    }
+
+    .fifthSection-title {
+        font-size: 1.5rem;
+    }
+
+    .fifthSection-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fifthSection-title {
+        font-size: 1.25rem;
+    }
+
+    .fifthSection-description {
+        font-size: 0.9rem;
+    }
+
+    .fifthSection-btn {
+        font-size: 0.875rem;
+        padding: 10px 15px;
+    }
+}
+
+.fifthSection-underline-ani {
+    color: inherit;
+    text-decoration: none;
+}
+.fifthSection-underline-ani {
+    background: linear-gradient(
+            to right,
+            rgb(255, 255, 255),
+            rgb(255, 255, 255)
+        ),
+        linear-gradient(to right, #0d92f4, #59b1f1, #76bff3);
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.fifthSection-underline-ani:hover,
+.fifthSection-underline-ani:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+    color: inherit;
+    text-decoration: none;
+}
+/* Color Palette */
+:root {
+    --gradient: radial-gradient(at 5% 80%, #0d92f4, #0056b3 70%);
+}
+
+/* Shape 1 */
+.shape-1 {
+    left: 310px;
+    animation: shape-1-movement;
+}
+
+/* Shape 2 */
+.shape-2 {
+    left: 205px;
+    animation: shape-2-movement;
+}
+
+/* Shape 3 */
+.shape-3 {
+    left: 100px;
+    animation: shape-3-movement;
+}
+
+/* Animations */
+/* Shape 1 Animation */
+@keyframes shape-1-movement {
+    from {
+    }
+    50% {
+        filter: blur(1.5px);
+    }
+    to {
+        left: 100px;
+    }
+}
+
+/* Shape 2 Animation */
+@keyframes shape-2-movement {
+    from {
+    }
+    5% {
+        background: var(--gradient);
+    }
+    10% {
+        height: 125px;
+    }
+    20% {
+        height: 150px;
+    }
+    50% {
+        filter: blur(1px);
+    }
+    to {
+        height: 100px;
+    }
+}
+
+/* Shape 3 Animation */
+@keyframes shape-3-movement {
+    from {
+        background: var(--gradient);
+    }
+    10% {
+        height: 150px;
+    }
+    20% {
+        height: 200px;
+        left: 100px;
+    }
+    50% {
+        height: 200px;
+        left: 205px;
+    }
+    90% {
+        height: 100px;
+    }
+    to {
+        height: 100px;
+        left: 310px;
+        background: var(--gradient);
+    }
+}
+
+/* Shared Properties */
+.shape-1,
+.shape-2,
+.shape-3 {
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    top: 110px;
+    border-radius: 50px;
+    background: var(--gradient);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Set background and border color */
+.fifthSection-left-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Rotate Container */
+    rotate: 180.02deg;
+
+    /* rotate: 180deg; */
+    /* Causes a rendering bug in Firefox 131.0b9 (aarch64) */
+}
+
+@media screen and (max-width: 1024px) {
+    .fifthSection-container {
+        gap: 30px;
+    }
+    .fifthSection-title {
+        font-size: 1.75rem;
+    }
+    .fifthSection-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fifthSection {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+    .fifthSection-container {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .fifthSection-right {
+        text-align: center;
+        padding: 0;
+    }
+    .fifthSection-title {
+        font-size: 1.5rem;
+    }
+    .fifthSection-left-container {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .fifthSection-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fifthSection-title {
+        font-size: 1.25rem;
+    }
+    .fifthSection-description {
+        font-size: 0.9rem;
+    }
+}
+
+.shape-1,
+.shape-2,
+.shape-3 {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    border-radius: 50px;
+    background: var(--gradient);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 480px) {
+    .shape-1,
+    .shape-2,
+    .shape-3 {
+        width: 40px;
+        height: 50px;
+    }
+}
