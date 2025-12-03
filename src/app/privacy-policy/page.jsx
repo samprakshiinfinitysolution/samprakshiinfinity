@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const PrivacyPolicy = () => {
   return (
-    <main className="min-h-screen py-12 px-6 bg-background text-foreground">
+    <main className="min-h-screen py-12 px-6 mt-16 bg-background text-foreground">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-brand-primary mb-6">Privacy Policy</h1>
 

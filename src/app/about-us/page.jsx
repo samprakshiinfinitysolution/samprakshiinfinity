@@ -57,12 +57,12 @@ const PROCESS_STEPS = [
 ];
 
 const TEAM_MEMBERS = [
-  { name: 'Sakshi Kumrawat', role: 'Founder & CEO', img: 'https://images.unsplash.com/photo-1544005312-94ddf0286df3?auto=format&fit=crop&w=600&q=80' },
+  // { name: 'Sakshi Kumrawat', role: 'Founder & CEO', img: 'https://images.unsplash.com/photo-1544005312-94ddf0286df3?auto=format&fit=crop&w=600&q=80' },
   { name: 'Lokendra Jatav', role: 'Team Lead & Senior Developer', img: lokendrajatavImg },
   { name: 'Shivani Paradkar', role: 'Senior Flutter Developer', img: shivani },
   // { name: 'Vishal Sabre', role: 'Marketing Director', img: 'https://images.unsplash.com/photo-1546964124-1b3b4e9a7b94?auto=format&fit=crop&w=600&q=80' },
   { name: 'Mitesh Yadav', role: 'Full Stack Developer', img: miteshImg },
-  { name: 'Durgesh Rajak', role: 'Graphic Designer', img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80' },
+  // { name: 'Durgesh Rajak', role: 'Graphic Designer', img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80' },
   { name: 'Gourav Chouhan', role: 'Full Stack Developer', img: gouravImg },
   { name: 'Vinita Jinodiya ', role: 'Frontend Developer', img: vinitaImg },
   { name: 'Kamta Prasad Shahu', role: 'Mern Developer', img: kamtaImg },

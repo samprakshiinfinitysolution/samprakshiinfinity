@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="backdrop-blur-sm group min-w-0 col-span-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
           <h4 className={`text-lg font-semibold text-foreground mb-4 pb-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-12 ${UNDERLINE} after:rounded-full border-b border-brand-primary/10  text-left`}>Quick Links</h4>
           <ul className="space-y-3" role="list">
-            {[["/","Home"],["/about-us","About Us"],["/contact-us","Contact Us"],["/careers","Careers"],["/how-to-use","How to Use"],["/references","References"]].map(([href,label])=> (
+            {[["/","Home"],["/about-us","About Us"],["/contact-us","Contact Us"]].map(([href,label])=> (
               <li key={href} className="transform transition-all hover:translate-x-2">
                 <Link href={href} className={`text-foreground/70 hover:text-brand-primary relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full ${UNDERLINE} after:transition-all after:duration-300`}>{label}</Link>
               </li>
@@ -54,7 +54,7 @@ const Footer = () => {
         <div className="backdrop-blur-sm group min-w-0 col-span-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
           <h4 className={`text-lg font-semibold text-foreground mb-4 pb-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-12 ${UNDERLINE} after:rounded-full border-b border-brand-primary/10 text-left`}>Back Office Services</h4>
           <ul className="space-y-3" role="list">
-            {[["/backoffice/customer-support","Customer Support"],["/backoffice/data-entry-management","Data Entry Management"],["/backoffice/account-management-services-for-amazon","Amazon Account Management"],["/backoffice/ecommerce-support","Ecommerce Support"]].map(([href,label])=> (
+            {[["/back-office/customer-support","Customer Support"],["/back-office/data-entry-management","Data Entry Management"],["/back-office/account-management-services-for-amazon","Amazon Account Management"],["/back-office/ecommerce-support","Ecommerce Support"]].map(([href,label])=> (
               <li key={href} className="transform transition-all hover:translate-x-2">
                 <Link href={href} className={`text-foreground/70 hover:text-brand-primary relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full ${UNDERLINE} after:transition-all after:duration-300`}>{label}</Link>
               </li>
@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="backdrop-blur-sm group min-w-0 col-span-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
           <h4 className={`text-lg font-semibold text-foreground mb-4 pb-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-12 ${UNDERLINE} after:rounded-full border-b border-brand-primary/10 text-left`}>Development</h4>
           <ul className="space-y-3" role="list">
-            {[["/webdevelopment","Web Development"],["/appdevelopment","App Development"],["/machine-learning-and-ai-solutions","AI & ML"]].map(([href,label])=> (
+            {[["/development/web-development","Web Development"],["/development/app-development","App Development"],["/development/machine-learning-ai","AI & ML"]].map(([href,label])=> (
               <li key={href} className="transform transition-all hover:translate-x-2">
                 <Link href={href} className={`text-foreground/70 hover:text-brand-primary relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full ${UNDERLINE} after:transition-all after:duration-300`}>{label}</Link>
               </li>
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="backdrop-blur-sm group min-w-0 col-span-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
           <h4 className={`text-lg font-semibold text-foreground mb-4 pb-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-12 ${UNDERLINE} after:rounded-full border-b border-brand-primary/10 text-left`}>Digital Marketing</h4>
           <ul className="space-y-3" role="list">
-            {[["/digital-marketing/content","Content Marketing"],["/digital-marketing/email","Email Marketing"],["/digital-marketing/seo","SEO Services"],["/digital-marketing/social-media","Social Media Marketing"]].map(([href,label])=> (
+            {[["/digital-marketing/content-marketing","Content Marketing"],["/digital-marketing/email-marketing","Email Marketing"],["/digital-marketing/seo","SEO Services"],["/digital-marketing/social-media-marketing","Social Media Marketing"]].map(([href,label])=> (
               <li key={href} className="transform transition-all hover:translate-x-2">
                 <Link href={href} className={`text-foreground/70 hover:text-brand-primary relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full ${UNDERLINE} after:transition-all after:duration-300`}>{label}</Link>
               </li>
@@ -135,9 +135,9 @@ const Footer = () => {
         <p className="text-center text-sm text-foreground/60 hover:text-foreground/80 transition-colors">&copy; {new Date().getFullYear()} Samprakshi Infinity Solution Pvt. Ltd. | All rights reserved.</p>
         <div className="mt-2 text-center">
           <Link href="/privacy-policy" className="text-foreground/60 hover:text-foreground/80 hover:underline text-sm">Privacy Policy | </Link>
-          <Link href="/terms-of-service" className="text-foreground/60 hover:text-foreground/80 hover:underline text-sm">Terms of Service | </Link>
+          <Link href="/terms-and-conditions" className="text-foreground/60 hover:text-foreground/80 hover:underline text-sm">Terms of Service | </Link>
          
-          <Link href="/privacy-policy" className="text-foreground/60 hover:text-foreground/80 hover:underline text-sm">Privacy Policy</Link>
+          <Link href="/refund-policy" className="text-foreground/60 hover:text-foreground/80 hover:underline text-sm">Refund Policy</Link>
         </div>
 
       </div>
